@@ -7,6 +7,7 @@ def readFromCsv():
     """
     io = open('values.csv', 'r', encoding='UTF-8')
     lines = io.readlines()
+    io.close()
     header = str(lines[0]).split(',')
     tables = list(lines[1:])
     # print(f'header: {header}')
